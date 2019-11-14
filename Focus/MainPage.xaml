@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="Focus.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Focus"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:media="using:Microsoft.Toolkit.Uwp.UI.Media"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Frame x:Name="MainFrame"></Frame>
+        <Grid x:Name="TitleBar" VerticalAlignment="Top" Height="32"
+              ><!--Background="#33000000"-->
+            <Grid.Background>
+                <media:BackdropBlurBrush Amount="2" />
+            </Grid.Background>
+            <Rectangle Fill="#44000000"></Rectangle>
+        </Grid>
+        <Grid VerticalAlignment="Top" Height="32">
+            <Grid x:Name="TopBarButton" x:FieldModifier="public" Height="30" Width="30" Margin="20,0,0,0"
+                  HorizontalAlignment="Left" Background="Transparent" 
+                  >
+                <!--Margin="10,0,0,0"-->
+                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEC11;"
+                          Foreground="White"
+                          Margin="-5,0,0,0"/>
+                <!--E700-->
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

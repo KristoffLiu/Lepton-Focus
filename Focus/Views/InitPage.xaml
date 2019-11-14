@@ -1,0 +1,105 @@
+﻿<Page
+    x:Class="Focus.Views.InitPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Focus.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid Width="1000" HorizontalAlignment="Left">
+            <Border Height="40" CornerRadius="20"
+                    Background="#22000000" RenderTransformOrigin="0,0"
+                    VerticalAlignment="Top" Margin="0,100,0,0"
+                    >
+                <Border.RenderTransform>
+                    <RotateTransform Angle="-45"></RotateTransform>
+                </Border.RenderTransform>
+            </Border>
+            <Border Height="40" CornerRadius="20"
+                    Background="#22000000" RenderTransformOrigin="0,0"
+                    VerticalAlignment="Top" Margin="-50,250,0,0"
+                    >
+                <Border.RenderTransform>
+                    <RotateTransform Angle="-45"></RotateTransform>
+                </Border.RenderTransform>
+            </Border>
+            <Border Height="40" CornerRadius="20"
+                    Background="#22000000" RenderTransformOrigin="0,0"
+                    VerticalAlignment="Top" Margin="150,150,0,0"
+                    >
+                <Border.RenderTransform>
+                    <RotateTransform Angle="-45"></RotateTransform>
+                </Border.RenderTransform>
+            </Border>
+            <Border Height="40" CornerRadius="20"
+                    Background="#22000000" RenderTransformOrigin="0,0"
+                    VerticalAlignment="Top" Margin="50,350,0,0"
+                    >
+                <Border.RenderTransform>
+                    <RotateTransform Angle="-45"></RotateTransform>
+                </Border.RenderTransform>
+            </Border>
+            <Border Height="40" CornerRadius="20"
+                    Background="#22000000" RenderTransformOrigin="0,0"
+                    VerticalAlignment="Top" Margin="200,300,0,0"
+                    >
+                <Border.RenderTransform>
+                    <RotateTransform Angle="-45"></RotateTransform>
+                </Border.RenderTransform>
+            </Border>
+        </Grid>
+        <ScrollViewer>
+            <StackPanel>
+                <TextBlock Text="欢迎使用" Margin="20,50,10,0"
+                           FontSize="14" ></TextBlock>
+                <TextBlock Text="专注 Beta" Margin="20,0,10,0"
+                           FontSize="30" FontWeight="Bold"></TextBlock>
+                <StackPanel Orientation="Horizontal" Margin="20,20,0,0">
+                    <Grid Width="40" Height="40" CornerRadius="20"
+                              Background="Green">
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xF182;"
+                                      FontSize="16"
+                                      Foreground="White"/>
+                    </Grid>
+                    <TextBlock Text="追踪你的电脑使用时间" VerticalAlignment="Center"
+                                   Margin="10,0,0,0"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="20,20,0,0">
+                    <Grid Width="40" Height="40" CornerRadius="20"
+                              Background="Red">
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8FB;"
+                                      FontSize="16"
+                                      Foreground="White"/>
+                    </Grid>
+                    <TextBlock Text="记录每一个任务完成的瞬间" VerticalAlignment="Center"
+                                   Margin="10,0,0,0"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="20,20,0,0">
+                    <Grid Width="40" Height="40" CornerRadius="20"
+                              Background="Blue">
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEA8D;"
+                                      FontSize="16"
+                                      Foreground="White"/>
+                    </Grid>
+                    <TextBlock Text="达到既定目标，赢得奖励" VerticalAlignment="Center"
+                                   Margin="10,0,0,0"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="20,20,0,0">
+                    <Grid Width="40" Height="40" CornerRadius="20"
+                              Background="Teal">
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE7FC;"
+                                      FontSize="16"
+                                      Foreground="White"/>
+                    </Grid>
+                    <TextBlock Text="沉浸的游戏化或养成式任务体验" VerticalAlignment="Center"
+                                   Margin="10,0,0,0"></TextBlock>
+                </StackPanel>
+                <Button Height="40" CornerRadius="20" Width="140" Margin="20,100,0,40"
+                        Content="设置个人信息" FontWeight="Light"></Button>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
